@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <title>Our Services | Auto Car Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <h2>Auto Car</h2>
+        <p>DRIVE WITH CONFIDENCE</p>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="featured.html"><i class="fa-solid fa-grip-vertical"></i> Featured</a></li>
+        <li><a href="services.html" class="active"><i class="fa-solid fa-user-gear"></i> Services</a></li>
+        <li><a href="about.html"><i class="fa-solid fa-users"></i> About</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-inbox"></i> Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="full-height-main">
+    <section class="section section-light full-height-scroll">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+          <div class="service-item">
+            <div class="service-icon"><i class="fa-solid fa-car"></i></div>
+            <h4>Car Sales</h4>
+            <p>New & used from trusted brands</p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon"><i class="fa-solid fa-credit-card"></i></div>
+            <h4>Financing</h4>
+            <p>Simple payment plans</p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h4>Maintenance</h4>
+            <p>Repair & regular service</p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon"><i class="fa-solid fa-repeat"></i></div>
+            <h4>Trade-In</h4>
+            <p>Fair price for your old car</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <title>Home | Auto Car Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <h2>Auto Car</h2>
+        <p>DRIVE WITH CONFIDENCE</p>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="featured.html"><i class="fa-solid fa-grip-vertical"></i> Featured</a></li>
+        <li><a href="services.html"><i class="fa-solid fa-user-gear"></i> Services</a></li>
+        <li><a href="about.html"><i class="fa-solid fa-user-group"></i> About</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-inbox"></i> Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="full-height-main">
+    <section id="home" class="hero-new full-height-hero">
+      <div class="container">
+        <div class="hero-new-grid">
+          <div class="hero-new-content">
+            <h1>Modern, Reliable &<br>Luxury Cars</h1>
+            <p>Explore a curated collection from Toyota, BMW, Mercedes-Benz, and more. Clear pricing, trusted service, and cars you'll love.</p>
+            
+            <div class="hero-buttons">
+              <a href="featured.html" class="btn-primary">Browse Inventory →</a>
+              <a href="javascript:void(0);" class="btn-outline" id="viewSpecialsBtn">View Specials</a>
+            </div>
+
+            <div class="hero-features">
+              <div class="feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h4>Trusted Dealer</h4>
+                  <p>Quality & reliability you can trust.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i class="fa-solid fa-tag"></i>
+                <div>
+                  <h4>Clear Pricing</h4>
+                  <p>No hidden fees. No surprises.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i class="fa-solid fa-headset"></i>
+                <div>
+                  <h4>Customer Support</h4>
+                  <p>We're here to help you anytime.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    const viewSpecialsBtn = document.getElementById('viewSpecialsBtn');
+    if (viewSpecialsBtn) {
+      viewSpecialsBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+      });
+    }
+  </script>
+</body>
+</html>

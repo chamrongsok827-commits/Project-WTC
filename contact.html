@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <title>Contact Us | Auto Car Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <h2>Auto Car</h2>
+        <p>DRIVE WITH CONFIDENCE</p>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="featured.html"><i class="fa-solid fa-grip-vertical"></i> Featured</a></li>
+        <li><a href="services.html"><i class="fa-solid fa-user-gear"></i> Services</a></li>
+        <li><a href="about.html"><i class="fa-solid fa-users"></i> About</a></li>
+        <li><a href="contact.html" class="active"><i class="fa-solid fa-inbox"></i> Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3>Visit Our Showroom</h3>
+            <p><i class="fa-solid fa-location-dot"></i> 158Z, Phnom Penh, Cambodia</p>
+            <p><i class="fa-solid fa-phone"></i> +885 66806937</p>
+            <p><i class="fa-solid fa-envelope"></i> info@Autocarshop.com</p>
+            <p><i class="fa-solid fa-clock"></i> Mon–Sat: 9 AM – 7 PM</p>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <input type="text" placeholder="Your name" required>
+              <input type="email" placeholder="Your email" required>
+              <textarea rows="3" placeholder="Your message"></textarea>
+              <button type="submit" class="btn-dark">Send Message →</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- NEW FOOTER -->
+  <footer class="new-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="featured.html">Featured Cars</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="services.html">Car Sales</a></li>
+            <li><a href="services.html">Financing</a></li>
+            <li><a href="services.html">Maintenance</a></li>
+            <li><a href="services.html">Trade-In</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <ul class="contact-info-list">
+            <li><i class="fa-solid fa-location-dot"></i> 158Z, Phnom Penh, Cambodia</li>
+            <li><i class="fa-solid fa-phone"></i> +855 66806917</li>
+            <li><i class="fa-solid fa-envelope"></i> info@autocarshop.com</li>
+            <li><i class="fa-solid fa-clock"></i> Mon-Sat: 9 AM – 7 PM</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get latest offers and car updates.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+  </footer>
+  
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you! We will contact you soon.');
+        this.reset();
+      });
+    }
+    const newsletterForm = document.getElementById('newsletterForm');
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for subscribing! You will receive our latest offers.');
+        this.reset();
+      });
+    }
+  </script>
+</body>
+</html>
