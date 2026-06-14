@@ -21,7 +21,6 @@ body {
   padding: 0 32px;
 }
 
-/* Header */
 .site-header {
   background: white;
   border-bottom: 1px solid #eef2f6;
@@ -59,7 +58,6 @@ body {
   white-space: nowrap;
 }
 
-/* Desktop Navigation */
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -88,7 +86,6 @@ body {
   color: #c49a6c;
 }
 
-/* Hamburger Menu Button - Hidden on Desktop */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -128,7 +125,6 @@ body {
   transform: rotate(-45deg) translate(6px, -5px);
 }
 
-/* Buttons */
 .btn-primary {
   display: inline-block;
   background: #1e3a4d;
@@ -180,7 +176,6 @@ body {
   background: #c49a6c;
 }
 
-/* Old Hero Section (Keep for other pages if needed) */
 .hero-car {
   width: 100%;
   max-width: 500px;
@@ -227,7 +222,6 @@ body {
   gap: 20px;
 }
 
-/* Sections */
 .section {
   padding: 80px 0;
 }
@@ -255,7 +249,6 @@ body {
   border-radius: 4px;
 }
 
-/* Car Cards with Images */
 .car-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -317,7 +310,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Services Grid */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -354,7 +346,6 @@ body {
   font-size: 0.9rem;
 }
 
-/* About Grid */
 .about-grid {
   display: flex;
   flex-wrap: wrap;
@@ -387,7 +378,6 @@ body {
   line-height: 1.6;
 }
 
-/* Contact */
 .contact-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -433,10 +423,6 @@ input:focus, textarea:focus {
   border-color: #c49a6c;
   box-shadow: 0 0 0 3px rgba(196, 154, 108, 0.15);
 }
-
-/* ============================================ */
-/* NEW HERO SECTION STYLES FOR HOMEPAGE */
-/* ============================================ */
 
 .hero-new {
   background: linear-gradient(135deg, #f1f6fa 0%, #ffffff 100%);
@@ -537,7 +523,6 @@ input:focus, textarea:focus {
   color: #5b6f82;
 }
 
-/* Right Column - Brands */
 .hero-brands {
   background: white;
   border-radius: 24px;
@@ -577,10 +562,6 @@ input:focus, textarea:focus {
   color: #c49a6c;
   transform: translateY(-2px);
 }
-
-/* ============================================ */
-/* FOOTER STYLES (NO BORDER, NO COPYRIGHT) */
-/* ============================================ */
 
 .new-footer {
   background: #0f2b38;
@@ -688,10 +669,6 @@ input:focus, textarea:focus {
   transform: translateY(-2px);
 }
 
-/* ============================================ */
-/* FULL FRAME FOR HOME, FEATURED, SERVICES, ABOUT */
-/* ============================================ */
-
 .full-height-main {
   min-height: calc(100vh - 80px);
   display: flex;
@@ -708,9 +685,6 @@ input:focus, textarea:focus {
   min-height: calc(100vh - 80px);
 }
 
-/* ============================================ */
-/* RESPONSIVE: TABLET AND SMALLER SCREENS */
-/* ============================================ */
 @media (max-width: 900px) {
   .nav-links {
     gap: 1.5rem;
@@ -741,9 +715,6 @@ input:focus, textarea:focus {
   }
 }
 
-/* ============================================ */
-/* HAMBURGER MENU FOR IPHONE/MOBILE */
-/* ============================================ */
 @media (max-width: 768px) {
   .container {
     padding: 0 24px;
@@ -805,7 +776,6 @@ input:focus, textarea:focus {
     color: #c49a6c;
   }
 
-  /* New Hero Mobile */
   .hero-new {
     padding: 40px 0;
   }
@@ -841,7 +811,6 @@ input:focus, textarea:focus {
     padding: 20px;
   }
 
-  /* Old Hero Mobile */
   .hero-content h1 {
     font-size: 2.2rem;
   }
@@ -888,7 +857,6 @@ input:focus, textarea:focus {
     white-space: nowrap;
   }
 
-  /* Full frame mobile adjustments */
   .full-height-main {
     min-height: calc(100vh - 70px);
   }
@@ -901,7 +869,6 @@ input:focus, textarea:focus {
     min-height: calc(100vh - 70px);
   }
 
-  /* Footer responsive */
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -928,7 +895,6 @@ input:focus, textarea:focus {
   }
 }
 
-/* For very small devices (iPhone SE) */
 @media (max-width: 480px) {
   .car-title {
     font-size: 1.3rem;
@@ -961,7 +927,6 @@ input:focus, textarea:focus {
     font-size: 0.55rem;
   }
 
-  /* New Hero Small */
   .hero-new-content h1 {
     font-size: 1.6rem;
   }
@@ -970,7 +935,6 @@ input:focus, textarea:focus {
     grid-template-columns: 1fr;
   }
 
-  /* Footer responsive small */
   .footer-grid {
     gap: 25px;
   }
